@@ -52,7 +52,7 @@ Pillow>=4.2.0
 CurrencyConverter
 googletrans==4.0.0-rc1
 google_trans_new
-pyrate-limiter
+pyrate-limiter>=3.2.0
 nekos.py
 tgcrypto
 Python_ARQ
