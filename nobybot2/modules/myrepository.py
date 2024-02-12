@@ -15,7 +15,7 @@ async def get(url: str, *args, **kwargs):
 @pgram.on_message(filters.command("repo"))
 async def repo(_, m):
     chat_id = m.chat.id
-    users = await get("https://api.github.com/repos/NandhaxD/VegetaRobot/contributors")
+    users = await get("https://api.github.com/repos/NandhaxD/nobybot2/contributors")
     list_of_users = ""
     count = 1
     for user in users:
@@ -28,5 +28,5 @@ async def repo(_, m):
 {list_of_users}
 [`Contributors: {total}`]"""
     await pgram.send_message(chat_id,text=text,
-    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Repo",url="https://gitHub.com/NandhaxD/VegetaRobot"),
+    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Repo",url="https://gitHub.com/NandhaxD/nobybot2"),
 InlineKeyboardButton("Group",url="t.me/VegetaSupport"),]]) ,reply_to_message_id=m.id ,disable_web_page_preview=True)

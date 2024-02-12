@@ -10,7 +10,7 @@ from nobybot2 import OWNER_ID, DEV_USERS
 from nobybot2 import TEMP_DOWNLOAD_DIRECTORY as path
 from nobybot2 import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './VegetaRobot/resources/IMG_20211227_141907_345.jpg'
+water = './nobybot2/resources/IMG_20211227_141907_345.jpg'
 client = tbot
 
 @register(pattern=r"^/pyupload ?(.*)")
@@ -22,7 +22,7 @@ async def Prof(event):
     thumb = water
     message_id = event.message.id
     input_str = event.pattern_match.group(1)
-    the_plugin_file = "./VegetaRobot/modules/{}.py".format(input_str)
+    the_plugin_file = "./nobybot2/modules/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
      message_id = event.message.id
      await event.client.send_file(

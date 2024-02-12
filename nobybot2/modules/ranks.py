@@ -14,7 +14,7 @@ from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
 ELEVATED_USERS_FILE = os.path.join(os.getcwd(),
-                                   'VegetaRobot/elevated_users.json')
+                                   'nobybot2/elevated_users.json')
 
 
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:

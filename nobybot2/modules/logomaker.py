@@ -89,7 +89,7 @@ async def lego(event):
     pointsize = 500
     fillcolor = "black"
     shadowcolor = "blue"
-    fnt = glob.glob("./VegetaRobot/resources/LOGOS/*")
+    fnt = glob.glob("./nobybot2/resources/LOGOS/*")
     randf = random.choice(fnt)
     font = ImageFont.truetype(randf, 140)
     w, h = draw.textsize(text, font=font)
@@ -101,7 +101,7 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black")
     fname = "logo.png"
     img.save(fname, "png")
-    vegeta = [[Button.url("MADE BY VEGETA", "t.me/vegetaRobot")]]
+    vegeta = [[Button.url("MADE BY VEGETA", "t.me/nobybot2")]]
     await tbot.send_file(event.chat_id, file=fname,buttons=vegeta)
     
     await pesan.delete()

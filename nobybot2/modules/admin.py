@@ -1,5 +1,5 @@
 """
-(Copyright to @VegetaRobot
+(Copyright to @nobybot2
 Powered by @pegasusXteam
 """
 import html

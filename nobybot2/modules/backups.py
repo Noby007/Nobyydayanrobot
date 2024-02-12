@@ -11,15 +11,15 @@ from nobybot2.__main__ import DATA_IMPORT
 from nobybot2.modules.helper_funcs.chat_status import user_admin
 from nobybot2.modules.helper_funcs.alternate import typing_action
 
-# from VegetaRobot.modules.rules import get_rules
+# from nobybot2.modules.rules import get_rules
 import nobybot2.modules.sql.rules_sql as rulessql
 
-# from VegetaRobot.modules.sql import warns_sql as warnssql
+# from nobybot2.modules.sql import warns_sql as warnssql
 import nobybot2.modules.sql.blacklist_sql as blacklistsql
 from nobybot2.modules.sql import disable_sql as disabledsql
 
-# from VegetaRobot.modules.sql import cust_filters_sql as filtersql
-# import VegetaRobot.modules.sql.welcome_sql as welcsql
+# from nobybot2.modules.sql import cust_filters_sql as filtersql
+# import nobybot2.modules.sql.welcome_sql as welcsql
 import nobybot2.modules.sql.locks_sql as locksql
 from nobybot2.modules.connection import connected
 

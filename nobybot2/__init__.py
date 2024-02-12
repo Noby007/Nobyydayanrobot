@@ -183,7 +183,7 @@ from nobybot2.config import ARQ_API_KEY, ARQ_API_URL
 aiohttpsession = ClientSession()
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-pgram = Client("VegetaRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+pgram = Client("nobybot2", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)

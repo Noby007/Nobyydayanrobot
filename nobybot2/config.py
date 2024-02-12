@@ -6,7 +6,7 @@ ARQ_API_URL = "https://arq.hamker.in"
 ARQ_API_KEY =  "KGTHQB-IKDNAI-XXFCND-VDZFQI-ARQ"
 
 def get_user_list(config, key):
-    with open('{}/VegetaRobot/{}'.format(os.getcwd(), config),
+    with open('{}/nobybot2/{}'.format(os.getcwd(), config),
               'r') as json_file:
         return json.load(json_file)[key]
 
