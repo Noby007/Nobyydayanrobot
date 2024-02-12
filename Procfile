@@ -1,3 +1,3 @@
-worker: python3 -m VegetaBot
-web: python3 -m VegetaBot
+worker: python3 -m nobybot2
+web: python3 -m nobybot2
 ps:scale worker=1
